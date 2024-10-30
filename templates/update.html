@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+    <div class="content w-full max-w-lg mx-auto mt-20 bg-white p-8 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-center mb-10 text-gray-700">Update Task</h1>
+
+        <form action="/update/{{ task.id }}" method="post" class="space-y-6">
+            <div>
+                <label for="content" class="block text-gray-600 mb-2">Task Content:</label>
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content" 
+                    value="{{ task.content }}" 
+                    class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg">
+                Update Task
+            </button>
+        </form>
+    </div>
+{% endblock %}

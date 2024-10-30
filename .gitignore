@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Environment
+.env
+env/
+venv/
+*.env
+
+# Flask Extensions
+instance/
+*.sqlite3
+*.sqlite
+
+# Node Modules
+node_modules/
+npm-debug.log
+
+# Tailwind CSS output
+static/css/main.css
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
